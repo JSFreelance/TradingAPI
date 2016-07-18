@@ -1,7 +1,8 @@
 from __future__ import unicode_literals
 from django.db import models
 from currencies.models import Currency
-# Create your models here.
+
+
 class Trade(models.Model):
 
     sell_currency = models.ForeignKey(Currency, related_name='sell_currency')
@@ -12,4 +13,5 @@ class Trade(models.Model):
     booking_date = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
-        return str(self.sell_currency) + '->' + str(self.rate) + '->' + str(self.buy_currency)
+        return str(self.sell_currency) + '->' + str(self.rate) \
+               + '->' + str(self.buy_currency)
