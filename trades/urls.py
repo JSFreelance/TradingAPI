@@ -1,9 +1,10 @@
-from django.conf.urls import url
+from django.conf.urls import url, include
+from rest_framework.routers import DefaultRouter
 import api as trades_api
 
+router = DefaultRouter()
+router.register(r'trades', trades_api.TradeViewSet)
+
 urlpatterns = [
-    # Trades API urls
-    url(r'trades/$', trades_api.TradeListAPI.as_view(), name='trade_list_api'),
-    url(r'trades/(?P<pk>[0-9]+)$',
-        trades_api.TradeDetailAPI.as_view(), name='trade_detail_api')
+    url(r'1.0/', include(router.urls))
 ]
