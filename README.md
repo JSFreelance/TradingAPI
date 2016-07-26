@@ -1,4 +1,6 @@
 # A Trading API 
+###Install
+Run setup.sh for create the project default virtual enviroment and all dependencies.
 ###Requirements list
 - [x] REQ1: Build a web app that will allow us Create Retrieve Update and Delete foreign exchange trades. 
 The app will be composed composed in two layers:
