@@ -2,7 +2,7 @@
 ###Requirements list
 - [x] REQ1: Build a web app that will allow us Create Retrieve Update and Delete foreign exchange trades. 
 The app will be composed composed in two layers:
-	* Web APP (Angular.js)
+	* Web APP [Angular.js](https://github.com/JSFreelance/TradingAPI)
 	* REST API (Django + Django REST Framework)
 - [x] REQ2: The main page will retrieve the existing trades, sorted by booking date, and structured as show in picture 1
 - [x] REQ3: The page described in the REQ2, should be paginated and only will display 5 elements per page, using the pagination structure defined in picture 1.
